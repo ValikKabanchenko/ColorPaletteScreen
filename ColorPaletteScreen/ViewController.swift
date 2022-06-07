@@ -12,10 +12,29 @@ class ViewController: UIViewController {
     @IBOutlet weak var currentlySelectedValueRed: UILabel!
     
     @IBOutlet weak var currentlySelectedValueGreen: UILabel!
-    
     @IBOutlet weak var currentlySelectedValueBlue: UILabel!
     
+    
+    
+    @IBAction func sliderRed(_ sender: Any) {
+    }
+    
+    @IBAction func sliderGreen(_ sender: Any) {
+    }
+    
+    @IBAction func sliderBlue(_ sender: Any) {
+    }
+    
+    
+    
+    
     @IBOutlet weak var colorMixed: UIView!
+    
+    
+  
+    
+    
+   
     
     
     @IBAction func allSliderMin(_ sender: Any) {

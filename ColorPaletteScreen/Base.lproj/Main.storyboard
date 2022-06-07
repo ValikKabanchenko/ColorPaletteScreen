@@ -25,7 +25,7 @@
                                     <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <action selector="allSliderMin:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Zkd-VN-hf9"/>
+                                    <action selector="allSliderMin:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mUI-4W-tIf"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HCA-rS-sIL">
@@ -37,7 +37,7 @@
                                     <color key="baseForegroundColor" systemColor="labelColor"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <action selector="allSliderMedium:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Yx3-sH-aS4"/>
+                                    <action selector="allSliderMedium:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PiF-rM-hMD"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1nW-Si-q1P">
@@ -49,7 +49,7 @@
                                     <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <action selector="allSliderMax:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Xb8-es-Nf8"/>
+                                    <action selector="allSliderMax:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Lth-w5-d3V"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Red" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N9U-pP-nWV">
@@ -76,31 +76,40 @@
                             <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="194" minValue="0.0" maxValue="255" translatesAutoresizingMaskIntoConstraints="NO" id="HJm-b0-6e8">
                                 <rect key="frame" x="131" y="200" width="265" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="sliderRed:" destination="BYZ-38-t0r" eventType="valueChanged" id="z4c-ks-bsT"/>
+                                </connections>
                             </slider>
                             <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="67" minValue="0.0" maxValue="255" translatesAutoresizingMaskIntoConstraints="NO" id="qTR-lz-eBk">
                                 <rect key="frame" x="131" y="324" width="265" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="sliderGreen:" destination="BYZ-38-t0r" eventType="valueChanged" id="lIN-nk-UeT"/>
+                                </connections>
                             </slider>
                             <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="151" minValue="0.0" maxValue="255" translatesAutoresizingMaskIntoConstraints="NO" id="4iE-zC-AjI">
                                 <rect key="frame" x="131" y="434" width="265" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="sliderBlue:" destination="BYZ-38-t0r" eventType="valueChanged" id="qUX-6R-jWs"/>
+                                </connections>
                             </slider>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hgS-9D-Lq9">
-                                <rect key="frame" x="94" y="198" width="26" height="32"/>
+                                <rect key="frame" x="94" y="198" width="17" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="26"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dFu-qN-7PZ">
-                                <rect key="frame" x="94" y="322" width="26" height="32"/>
+                                <rect key="frame" x="94" y="322" width="17" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="26"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Ag-LW-RVf">
-                                <rect key="frame" x="94" y="431" width="26" height="32"/>
+                                <rect key="frame" x="94" y="431" width="17" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="26"/>
                                 <nil key="textColor"/>
@@ -118,8 +127,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Z6Z-8R-3hl">
-                                        <rect key="frame" x="8" y="8" width="358" height="268"/>
+                                        <rect key="frame" x="8" y="8" width="351" height="268"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </view>
                                 </subviews>
                                 <color key="backgroundColor" red="0.4588235021" green="0.082352943720000002" blue="0.47843140360000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -129,10 +139,10 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <connections>
-                        <outlet property="colorMixed" destination="Z6Z-8R-3hl" id="D81-7w-N6A"/>
-                        <outlet property="currentlySelectedValueBlue" destination="8Ag-LW-RVf" id="Ewa-25-JUe"/>
-                        <outlet property="currentlySelectedValueGreen" destination="dFu-qN-7PZ" id="kkm-8P-XdI"/>
-                        <outlet property="currentlySelectedValueRed" destination="hgS-9D-Lq9" id="gcC-D1-HzF"/>
+                        <outlet property="colorMixed" destination="Z6Z-8R-3hl" id="zhl-xl-2eH"/>
+                        <outlet property="currentlySelectedValueBlue" destination="8Ag-LW-RVf" id="tcm-gb-iUA"/>
+                        <outlet property="currentlySelectedValueGreen" destination="dFu-qN-7PZ" id="MiD-tQ-pDq"/>
+                        <outlet property="currentlySelectedValueRed" destination="hgS-9D-Lq9" id="XAe-Yy-sru"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
