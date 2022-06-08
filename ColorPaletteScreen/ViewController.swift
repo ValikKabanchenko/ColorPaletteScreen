@@ -17,6 +17,15 @@ class ViewController: UIViewController {
     @IBOutlet weak var sliderOutletGreen: UISlider!
     @IBOutlet weak var sliderOutletBlue: UISlider!
     
+    @IBOutlet weak var colorMixed: UIView!
+    
+    func updateSlidetColor() {
+        updateSliderRed()
+        updateSliderGreen()
+        updateSliderBlue()
+    }
+    
+    
     func updateViewMixed() {
         colorMixed.backgroundColor = UIColor.init(red: CGFloat(sliderOutletRed.value/255), green: CGFloat(sliderOutletGreen.value/255), blue: CGFloat(sliderOutletBlue.value/255), alpha: 1.0)
     }
@@ -55,25 +64,12 @@ class ViewController: UIViewController {
     
     
     
-    @IBOutlet weak var colorMixed: UIView!
-    
-    
-  
-    
-    
-   
-    
-    
-    @IBAction func allSliderMin(_ sender: Any) {
+   @IBAction func allSliderMin(_ sender: Any) {
         sliderOutletRed.value = 0
         sliderOutletGreen.value = 0
         sliderOutletBlue.value = 0
         
-        updateSliderRed()
-        
-        updateSliderGreen()
-        
-        updateSliderBlue()
+       updateSlidetColor()
         
         updateViewMixed()
     }
@@ -84,11 +80,7 @@ class ViewController: UIViewController {
         sliderOutletBlue.value =  sliderOutletBlue.maximumValue / 2 + sliderOutletBlue.minimumValue
         
         
-        updateSliderRed()
-        
-        updateSliderGreen()
-        
-        updateSliderBlue()
+        updateSlidetColor()
         
         updateViewMixed()
     }
@@ -98,11 +90,7 @@ class ViewController: UIViewController {
         sliderOutletGreen.value = sliderOutletGreen.maximumValue
         sliderOutletBlue.value = sliderOutletBlue.maximumValue
         
-        updateSliderRed()
-        
-        updateSliderGreen()
-        
-        updateSliderBlue()
+        updateSlidetColor()
         
         updateViewMixed()
     }
@@ -112,11 +100,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
        
-        updateSliderRed()
-        
-        updateSliderGreen()
-        
-        updateSliderBlue()
+        updateSlidetColor()
         
         updateViewMixed()
         
