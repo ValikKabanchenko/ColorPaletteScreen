@@ -10,21 +10,38 @@ import UIKit
 class ViewController: UIViewController {
 
     @IBOutlet weak var currentlySelectedValueRed: UILabel!
-    
     @IBOutlet weak var currentlySelectedValueGreen: UILabel!
     @IBOutlet weak var currentlySelectedValueBlue: UILabel!
     
+    @IBOutlet weak var sliderOutletRed: UISlider!
+    @IBOutlet weak var sliderOutletGreen: UISlider!
+    @IBOutlet weak var sliderOutletBlue: UISlider!
     
     
     @IBAction func sliderRed(_ sender: Any) {
+        updateSliderRed()
     }
+    func updateSliderRed() {
+        currentlySelectedValueRed.text = "\(Int(sliderOutletRed.value))"
+    }
+    
     
     @IBAction func sliderGreen(_ sender: Any) {
+        updateSliderGreen()
     }
+    func updateSliderGreen() {
+        currentlySelectedValueGreen.text =
+        "\(Int(sliderOutletGreen.value))"
+    }
+    
     
     @IBAction func sliderBlue(_ sender: Any) {
+        updateSliderBlue()
     }
-    
+    func updateSliderBlue() {
+        currentlySelectedValueBlue.text =
+        "\(Int(sliderOutletBlue.value))"
+    }
     
     
     
@@ -50,7 +67,22 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+      
+        sliderOutletRed.value = (sliderOutletRed.minimumValue - sliderOutletRed.maximumValue) / 2 +
+        sliderOutletRed.minimumValue
+        
+        
+        sliderOutletGreen.value = (sliderOutletGreen.minimumValue - sliderOutletGreen.maximumValue) / 2 +
+        sliderOutletGreen.minimumValue
+        
+        sliderOutletBlue.value = (sliderOutletBlue.minimumValue - sliderOutletBlue.maximumValue) / 2 +
+        sliderOutletBlue.minimumValue
+        
+        updateSliderRed()
+        updateSliderGreen()
+        updateSliderBlue()
+        
+        
     }
 
 
