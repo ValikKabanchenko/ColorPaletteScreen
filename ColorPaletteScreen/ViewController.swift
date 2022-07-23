@@ -8,7 +8,7 @@
 import UIKit
 
 class ViewController: UIViewController {
-//Тест Репозит
+//Тест Репозит + попытка
     @IBOutlet weak var currentlySelectedValueRed: UILabel!
     @IBOutlet weak var currentlySelectedValueGreen: UILabel!
     @IBOutlet weak var currentlySelectedValueBlue: UILabel!
